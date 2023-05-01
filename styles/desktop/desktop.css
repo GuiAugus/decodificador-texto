@@ -198,6 +198,10 @@ header {
 
 }
 
+#criptografar:hover{
+    background: #0B0459;
+}
+
 #criptografar p{    
     width: 280px;
     height: 19px;
@@ -231,6 +235,10 @@ header {
     flex: none;
     order: 1;
     flex-grow: 0;
+}
+
+#descriptografar:hover{
+    background: #747282;
 }
 
 #descriptografar p {
