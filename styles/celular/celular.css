@@ -1,26 +1,28 @@
-@media (max-width: 768px) {
+@media (max-width: 375px) {
     
 
     /* caixa texto */
 
     #textoEntrada {
-        width: 660px;
-        height: 500px;
-        left: 20px;
+        width: 330px;
+        height: 250px;
+        left: 16px;
         top: 240px;
     }
 
     /* alerta */
 
     .alerta {
-        left: 20px;
+        left: 16px;
     }
 
     /* buttons */
 
     .buttons {
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        width: 645px;
+        width: 330px;
         height: 67px;
         left: 20px;
         top: 870px;
@@ -36,10 +38,10 @@
         gap: 32px;
 
         position: absolute;
-        width: 660px;
-        height: 133px;
+        width: 260px;
+        height: 122px;
         left: 20px;
-        top: 1001px;
+        top: 1100px;
     }
 
     #procurando {
@@ -48,20 +50,23 @@
 
     .mensagem {
         position: absolute;
-        width: 660px;
-        height: 133px;
+        width: 260px;
+        height: 122px;
         text-align: center;
         top: 40px;
     }
 
     #sem-mensagem {
-        width: 624px;
-        height: 29px;
+        width: 260px;
+        height: 58px;
         text-align: center;
+        font-size: 24px;
+        padding-bottom: 0px;
     }
 
     #texto-criptogrado {
-        width: 624px;
-        height: 24px;
+        width: 260px;
+        height: 48px;
+        font-size: 18px;
     }
 }
