@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
 @import url(desktop/desktop.css);
+@import url(tablet/tablet.css);
 
 
 html{
@@ -10,4 +11,5 @@ html{
 .container {
     position: relative;
     min-height: 100vh;
+    text-align: center;
 }

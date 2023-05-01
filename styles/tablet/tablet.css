@@ -1,0 +1,67 @@
+@media (max-width: 770px) {
+    
+
+    /* caixa texto */
+
+    #textoEntrada {
+        width: 660px;
+        height: 500px;
+        left: 20px;
+        top: 240px;
+    }
+
+    /* alerta */
+
+    .alerta {
+        left: 20px;
+    }
+
+    /* buttons */
+
+    .buttons {
+        position: absolute;
+        width: 645px;
+        height: 67px;
+        left: 20px;
+        top: 870px;
+    }
+
+    /* retangulo */
+
+    .mensagem-criptografada {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+
+        position: absolute;
+        width: 660px;
+        height: 133px;
+        left: 20px;
+        top: 1001px;
+    }
+
+    #procurando {
+        display: none;
+    }
+
+    .mensagem {
+        position: absolute;
+        width: 660px;
+        height: 133px;
+        text-align: center;
+        top: 40px;
+    }
+
+    #sem-mensagem {
+        width: 624px;
+        height: 29px;
+        text-align: center;
+    }
+
+    #texto-criptogrado {
+        width: 624px;
+        height: 24px;
+    }
+}
