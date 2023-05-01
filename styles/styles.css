@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap');
 @import url(desktop/desktop.css);
 
+
 html{
-    background: #E5E5E5;
+    background: #F3F5FC;
+    font-family:'Montserrat', sans-serif;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
 }
