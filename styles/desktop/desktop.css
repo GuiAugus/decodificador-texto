@@ -143,6 +143,41 @@ header {
     flex-grow: 0;
 }
 
+#copiar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+
+    left: 40px;
+    top: 800px;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+#copiar p{    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A3871;
+}
+
+#copiar:hover{
+    background: #747282;
+}
+
 /* alerta */
 
 .alerta {
@@ -157,6 +192,8 @@ header {
     height: 18px;
     left: 240px;
     top: 851px;
+
+    
 }
 
 .alerta p {
@@ -197,9 +234,6 @@ header {
 }
 
 #criptografar {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 24px;
     gap: 8px;
 
@@ -234,11 +268,6 @@ header {
 }
 
 #descriptografar {
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 24px;
     gap: 8px;
 

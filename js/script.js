@@ -9,7 +9,7 @@ function mostraCriptografar() {
 
 function criptografar(stringCriptografar) {
 
-    let listaCodigo = [['a', 'ai'] , ['e', 'enter'], ['i', 'imes'] , ['o', 'ober'] , ['u', 'ufat']];
+    let listaCodigo = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'] , ['o', 'ober'] , ['u', 'ufat']];
     stringCriptografar = stringCriptografar.toLowerCase();
 
     for(let i = 0; i < listaCodigo.length; i++) {
@@ -21,3 +21,22 @@ function criptografar(stringCriptografar) {
     return stringCriptografar
 }
 
+function mostraDescriptografar() {
+    const textoDescriptografado = descriptografar(textEntrada.value);
+    mensagem.value = textoDescriptografado;
+    textEntrada.value = "";
+}
+
+function descriptografar(stringDescriptografar) {
+
+    let listaCodigo = [['e', 'enter'], ['i', 'imes'], ['a', 'ai'] , ['o', 'ober'] , ['u', 'ufat']];
+    stringDescriptografar = stringDescriptografar.toLowerCase();
+
+    for(let i = 0; i < listaCodigo.length; i++) {
+        if(stringDescriptografar.includes(listaCodigo[i][1])) {
+            stringDescriptografar = stringDescriptografar.replaceAll(listaCodigo[i][1], listaCodigo[i][0]);
+        }
+    }
+
+    return stringDescriptografar
+}
