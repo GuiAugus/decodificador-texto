@@ -39,13 +39,17 @@
 
         position: absolute;
         width: 260px;
-        height: 250px;
+        height: 500px;
         left: 20px;
         top: 1100px;
     }
 
     #procurando {
         display: none;
+    }
+
+    .mensagem-resultado {
+        width: 240px;
     }
 
     .mensagem {
@@ -77,7 +81,7 @@
         position: absolute;
     
         left: 20px;
-        top: 200px;
+        top: 400px;
     
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     
