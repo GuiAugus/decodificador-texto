@@ -38,13 +38,13 @@
             </section>
 
             <section class="mensagem-criptografada">
-                <textarea class="mensagem-resultado" cols="20" rows="10" disabled=""></textarea>
+                <textarea class="mensagem-resultado" id="resultado" cols="20" rows="10" disabled=""></textarea>
                 <img id="procurando" src="assets/img/procurando.svg" alt="procurando">
                 <div class="mensagem">
                     <h2 id="sem-mensagem">Nenhuma mensagem encontrada</h2>
                     <p id="texto-criptogrado">Digite um texto que você deseja criptografar ou descriptografar</p>
                 </div>
-                <button type="button" id="copiar">Copiar</button>
+                <button type="button" id="copiar" onclick="copiar()">Copiar</button>
             </section>
         </main>
     </div>

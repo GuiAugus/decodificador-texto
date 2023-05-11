@@ -40,3 +40,14 @@ function descriptografar(stringDescriptografar) {
 
     return stringDescriptografar
 }
+
+function copiar() {  
+    var textoCopiado = document.getElementById("resultado");
+  
+    textoCopiado.select();
+    textoCopiado.setSelectionRange(0, 99999); 
+
+    navigator.clipboard.writeText(textoCopiado.value);
+  
+    alert("Copied the text: " + textoCopiado.value);
+  }
