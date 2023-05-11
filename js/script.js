@@ -2,12 +2,16 @@ const textEntrada = document.querySelector("#textoEntrada")
 const mensagem = document.querySelector(".mensagem-resultado")
 
 function mostraCriptografar() {
-    const mensagens = document.getElementById("mensagem");
-    const imagem = document.getElementById("procurando");
-    mensagens.remove();
-    imagem.remove();
     const textoCriptografado = criptografar(textEntrada.value);
     mensagem.value = textoCriptografado;
+    
+    const mensagens = document.getElementById("mensagem");
+    const imagem = document.getElementById("procurando");
+
+        if (mensagens != "" || imagem != "") {
+            mensagens.remove();
+            imagem.remove();
+            }
     textEntrada.value = "";
 }
 
@@ -26,12 +30,17 @@ function criptografar(stringCriptografar) {
 }
 
 function mostraDescriptografar() {
-    const mensagens = document.getElementById("mensagem");
-    const imagem = document.getElementById("procurando");
-    mensagens.remove();
-    imagem.remove();
     const textoDescriptografado = descriptografar(textEntrada.value);
     mensagem.value = textoDescriptografado;
+
+    const mensagens = document.getElementById("mensagem");
+    const imagem = document.getElementById("procurando");
+
+        if (mensagens != "" || imagem != "") {
+            mensagens.remove();
+            imagem.remove();
+            }
+
     textEntrada.value = "";
 }
 
@@ -53,7 +62,7 @@ function copiar() {
     var textoCopiado = document.getElementById("resultado");
   
     textoCopiado.select();
-    textoCopiado.setSelectionRange(0, 99999); 
+    textoCopiado.setSelectionRange(0, 99999);   
 
     navigator.clipboard.writeText(textoCopiado.value);
   }
