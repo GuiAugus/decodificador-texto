@@ -7,8 +7,8 @@ function mostraCriptografar() {
     
     const mensagens = document.getElementById("mensagem");
     const imagem = document.getElementById("procurando");
-
-        if (mensagens != "" || imagem != "") {
+    
+        if (mensagens != null || imagem != null) {
             mensagens.remove();
             imagem.remove();
             }
@@ -35,12 +35,12 @@ function mostraDescriptografar() {
 
     const mensagens = document.getElementById("mensagem");
     const imagem = document.getElementById("procurando");
-
-        if (mensagens != "" || imagem != "") {
+    
+        if (mensagens != null || imagem != null) {
             mensagens.remove();
             imagem.remove();
             }
-
+            
     textEntrada.value = "";
 }
 
